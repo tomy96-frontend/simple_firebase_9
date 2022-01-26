@@ -1,7 +1,7 @@
 # simple_firebase_9
 If you are interested in firebase 9, here is some information about it <br>
 
-********************************************************** First Part **********************************************************<br>
+******************************************* First Part *******************************************<br>
 1.step
 Create dist and src folder <br>
 ---dist contains an index.html <br>
@@ -23,4 +23,11 @@ Create dist and src folder <br>
 } <br>
 
 4.step <br>
---Make a custom script  in our packge.json { "build":"webpack" } and then run the <strong> npm run build</strong> command and you will see that the bundle.js will appear inside the dist folder
+--Make a custom script  in our packge.json { "build":"webpack" } and then run the <strong> npm run build</strong> command and you will see that the bundle.js will appear inside the dist folder <br>
+
+5.step<br>
+--Add the bundle.js script in indexhtml <br>
+
+<strong>and now open the live server and then console</strong><br>
+
+If you've done everything right, you should see that in the console "Hello developer nice to meet you."
