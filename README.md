@@ -15,12 +15,12 @@ Create dist and src folder <br>
 --add webpack.config.js ={
     const path = require('path')
 
-    -mode: {we first specify a mode and so i've specified development}, <br>
-    -entry: ./src/index.js {this is the entry file and here I reach index.jst} <br>
+    -mode: {we first specify a mode and so i've specified development}, 
+    -entry: ./src/index.js {this is the entry file and here I reach index.jst} 
     -ouptput: {this is an object first property of the object is a path and second property of the object filename }
 
  -watch: { we have a watch property, which monitors and translates changes in real time to bundle.js }       
 } <br>
 
-4.step
---Make a custom script  in our packge.json { "build":"webpack" } and then run the npm run build command and you will see that the bundle.js will appear inside the dist folder
+4.step <br>
+--Make a custom script  in our packge.json { "build":"webpack" } and then run the <strong> npm run build<storng> command and you will see that the bundle.js will appear inside the dist folder
