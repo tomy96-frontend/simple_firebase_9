@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore"
+import { collection, getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
     apiKey: "AIzaSyCfZYLAtrA6XnOqMe7d61-QZ-DKz1hCmpU",
@@ -11,7 +11,10 @@ const firebaseConfig = {
   };
 
 //init firebaseapp
-initializeApp(firebaseConfig)
+initializeApp(firebaseConfig);
 
 //init service db = database
-const db = getFirestore()
+const db = getFirestore();
+
+//collection reference
+const colReference = collection(db, 'games')
