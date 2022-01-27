@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { collection, getDocs, getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCfZYLAtrA6XnOqMe7d61-QZ-DKz1hCmpU",
-    authDomain: "firstproject-1615b.firebaseapp.com",
-    projectId: "firstproject-1615b",
-    storageBucket: "firstproject-1615b.appspot.com",
-    messagingSenderId: "625048803068",
-    appId: "1:625048803068:web:7afa65cffeaee181dd6979"
-  };
+  apiKey: "AIzaSyCfZYLAtrA6XnOqMe7d61-QZ-DKz1hCmpU",
+  authDomain: "firstproject-1615b.firebaseapp.com",
+  projectId: "firstproject-1615b",
+  storageBucket: "firstproject-1615b.appspot.com",
+  messagingSenderId: "625048803068",
+  appId: "1:625048803068:web:7afa65cffeaee181dd6979"
+};
 
 //init firebaseapp
 initializeApp(firebaseConfig);
@@ -20,11 +20,16 @@ const db = getFirestore();
 const colReference = collection(db, 'games')
 
 //get collection data
-getDocs(colReference).then((mydata)=>{
+getDocs(colReference).then((mydata) => {
   console.log(mydata.docs)
+
   let games = []
-  mydata.docs.forEach((mydoc)=>{
-      games.push({...mydoc.data(), id: mydoc.id })
+  mydata.docs.forEach((mydoc) => {
+    games.push({ ...mydoc.data(), id: mydoc.id })
   })
+
   console.log(games);
+  
+}).catch(err => {
+  console.log(err.message);
 })
