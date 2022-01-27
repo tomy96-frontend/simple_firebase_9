@@ -47,7 +47,6 @@ Open this link https://console.firebase.google.com/ <br>
      --add id ({...yourdoc.data(), id: doc.id})<br>
      --add console.log(youre array)<br>
  }<br>
- !!!!!!!!!!!It is important that when using this branch, you keep running the <strong> npm run build </strong>
-
+ !!!!!!!!!!!It is important that when using this branch, you keep running the <strong> npm run build </strong> !!!!!!!!!!!
 
 
