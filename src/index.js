@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { collection, getFirestore } from "firebase/firestore"
+import { collection, getDocs, getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
     apiKey: "AIzaSyCfZYLAtrA6XnOqMe7d61-QZ-DKz1hCmpU",
@@ -18,3 +18,8 @@ const db = getFirestore();
 
 //collection reference
 const colReference = collection(db, 'games')
+
+//get collection data
+getDocs(colReference).then((mydata)=>{
+  console.log(mydata.docs)
+})
