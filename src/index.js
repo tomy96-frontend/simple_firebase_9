@@ -22,4 +22,9 @@ const colReference = collection(db, 'games')
 //get collection data
 getDocs(colReference).then((mydata)=>{
   console.log(mydata.docs)
+  let games = []
+  mydata.docs.forEach((mydoc)=>{
+      games.push({...mydoc.data(), id: mydoc.id })
+  })
+  console.log(games);
 })
