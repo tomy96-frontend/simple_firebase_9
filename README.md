@@ -28,11 +28,26 @@ Open this link https://console.firebase.google.com/ <br>
  => click on Auto-ID and firebase automatically generates unique id <br>
  => Add field, type, and Value <br>
  =>My field games | type: string | values: dota<br>
- =>I add field and this filed Creator| type: string | value: IceFrog<br>
+ =>I add field and this filed Creator| type: string | value: IceFrog and etc... <br>
 
 5.step<br>
- <br>
+ ---Import getFireStore, collection, getDocs from firebase/firestore<br>
+ ---Init firebaseapp  <br>
+ ---Init  services <br>
+ ---collection reference<br>
+ ---get Collection data<br>
 
-<br>
+ 6.step <br>
+ ---get collection data:{
+     --you can find a data function in the console and use it <br>
+     --create an array <br>
+     --use forEach loop <br>
+     --push your array <br>
+     --use spread operator({...yourdoc.data()})<br>
+     --add id ({...yourdoc.data(), id: doc.id})<br>
+     --add console.log(youre array)<br>
+ }<br>
+ !!!!!!!!!!!It is important that when using this branch, you keep running the <strong> npm run build </strong>
+
 
 
