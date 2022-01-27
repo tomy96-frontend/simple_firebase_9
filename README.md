@@ -1,33 +1,28 @@
 # simple_firebase_9
 If you are interested in firebase 9, here is some information about it <br>
 
-******************************************* First Part *******************************************<br>
+******************************************* Second Part *******************************************<br>
 1.step
-Create dist and src folder <br>
----dist contains an index.html <br>
----src contains an index.js <br>
+Open this link https://console.firebase.google.com/ <br>
+---add new project or create project <br>
+---Get started by adding Firebase to your app we have 3 options: ios,andorid and web we click on the web  <br>
+--Give it a name -> click register app -> click contiune the console and now  we can see this new app<br>
+--Click 1 app -> click on the cog and we can see the settings -> scroll down we have three points select the configuration and copy the content to indexjs <br>
 
 2.step <br>
---npm init -y  {this comand create package.json}<br>
---npm i webpack webpack-cli -D {this command create package-lock.json and refreshed package.json and adds the nodemodules folder //I added the node_module folder to gitignore because there are too many commits  // }<br>
+ ---<strong>npm i firebase</strong> <br>
+ ---import initializeApp from "firebase/app"  <br>
+ ---and use this -> initializeApp(firebaseConfig) -> in the index.js  <br>
 
 3.step <br>
---add webpack.config.js ={
-    const path = require('path')
-
-    -mode: {we first specify a mode and so i've specified development}, 
-    -entry: ./src/index.js {this is the entry file and here I reach index.jst} 
-    -ouptput: {this is an object first property of the object is a path and second property of the object filename }
-
- -watch: { we have a watch property, which monitors and translates changes in real time to bundle.js }       
-} <br>
+ <br>
 
 4.step <br>
---Make a custom script  in our packge.json { "build":"webpack" } and then run the <strong> npm run build</strong> command and you will see that the bundle.js will appear inside the dist folder <br>
+ <br>
 
 5.step<br>
---Add the bundle.js script in indexhtml <br>
+ <br>
 
-<strong>and now open the live server and then console</strong><br>
+<br>
 
-If you've done everything right, you should see that in the console "Hello developer nice to meet you."
+
